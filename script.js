@@ -5,6 +5,8 @@ function bmiRechner(){
     let height = document.querySelector("#height").value;
     height = parseFloat(height);
 
+    height = height / 100;
+
     let bmi = weight / height / height;
     bmi = bmi.toFixed(2)
 
