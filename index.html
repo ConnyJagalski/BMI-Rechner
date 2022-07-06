@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Conny Jagalski">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI-Rechner</title>
+</head>
+<body>
+    <main>
+        <h1>BMI-Rechner - Body Mass Index berechnen</h1>
+        <p>Der <b>BMI (Body Mass Index)</b> ist ein Maß für die Bewertung des Körpergewichts, indem er das Gewicht in Relation zu der Körpergröße setzt. Aufgrund der einfachen Messung ist die Berechnung des BMI das am häufigsten verwendete <b>Diagnoseverfahren zur Einordnung der Körperlast</b>. Anhand des ermittelten BMI-Werts lässt sich schnell aussagen, ob eine Person Normalgewicht, Übergewicht oder Untergewicht hat.</p>
+        <h2>Der BMI und seine Berechnung</h2>
+        <p>Auch wenn der BMI keine Körperfettanteile berücksichtigt, ist er noch immer das geeigneteste Verfahren zu Gewichtsbewertung und liefert für erwachsene Personen, die weder besonders große Muskelmasse noch Amputationen aufweisen, verlässliche Ergebnisse.</p>
+        <h3>Formel zur Berechnung des BMI</h3>
+        <p>Zu Berechnung des Body Mass Indexes wird die relativ einfache 
+        <b>BMI-Formel</b> angewandt: <b>BMI=(Gewicht in kg)/(Körpergroße in m)²</b>. Der errechnete Wert muss anschließend mit einer Wertetabelle abgeglichen werden, um auswerten zu können, ob eine Person normalgewichtig, übergewichtig oder untergewichtig ist. Die WHO hat hierfür besondere Grenzen definiert, wobei sich für Männer und Frauen unterschiedliche Ergebnisse ergeben. Eine solche Auswertung erhalten Sie in den Ergebnissen nach dem Ausfüllen und Ausführen des <b>BMI-Rechners</b>.</p>
+    </main>
+
+    <form action="javascript:bmiRechner()">
+        <h2>BMI berechnen</h2>
+        <label for="weight">*Ihr Gewicht in KG:</label>
+        <input type="number" id="weight" min="30" max="300" required>
+        <label for="height">*Ihre Größe in Metern:</label>
+        <input type="number" id="height" step="0.01" min="1.20" max="2.75" required>
+        <button type="submit">Berechnen</button>
+        <div id="bmi"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

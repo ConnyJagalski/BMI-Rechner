@@ -1,0 +1,30 @@
+body {
+    background: url(images/fat-lady.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.5rem;
+}
+
+main, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+}
+
+h1, h2, h3, p, form {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+button, input {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 50%;
+    margin: 0.5rem;
+}
